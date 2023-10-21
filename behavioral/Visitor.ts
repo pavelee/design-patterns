@@ -2,6 +2,7 @@
 Visitor - lets you separate algorithms from the objects on witch they operate
 
 Problem
+
 - You need to defin a new opration on an entire class hirearchy
 - you want to avoid polluting the class with the new operation
 - you need to define many unrelated operations
@@ -10,6 +11,7 @@ Problem
 - you need to perform the same operation across many classes and that operation involves many classes
 
 Solution
+
 - Define a separate operation (visitor) that is applied to an entire class hirearchy
 - Move related behaviors into the new class
 - The original class hierarchy is free of new behaviors
