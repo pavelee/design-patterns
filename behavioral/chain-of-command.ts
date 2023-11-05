@@ -35,6 +35,23 @@ Helping to avoid code duplication in each handler.
 - Client, which creates chain of handlers and passes request to first handler in the chain. 
 Chain could not be started from first handler, it depends of your needs.
 
+Usage
+
+- When you need to process sequence of checks, but you don't know what types of checks will be in the sequence
+- When you want to execute several handlers in a particular order
+- When you want to extends chain in runtime or change order of handlers in runtime
+
+Advantages
+
+- You can control order of handlers in runtime
+- Single Responsibility Principle. 
+You can decouple classes that invoke operations from classes that perform operations
+- Open/Closed Principle. You can introduce new handlers into the app without breaking the existing client code
+
+Disadvantages
+
+- Some requests may end up unhandled
+
 */
 
 interface ComponentWithConextualHelp {
